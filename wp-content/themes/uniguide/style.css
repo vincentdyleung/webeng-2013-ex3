@@ -423,3 +423,72 @@ footer
 {
 	text-decoration: none;
 }
+
+#article-body
+{
+	padding: 8px;
+}
+
+#article-body h1
+{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#article-body h4
+{
+	font-size: 0.9em;
+}
+
+#article-body span
+{
+	margin: 8px 0px 8px 3px;
+	font-weight: bold;
+}
+
+#article-body img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#download
+{
+	background-color: #3E3E4A;
+	padding: 16px 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+#download a
+{
+	text-decoration: none;
+}
+
+#news-group
+{
+	padding: 10px 0 0 0;
+	border-top-style: solid;
+}
+
+.news
+{
+	display: table-cell;
+	width: 25%;
+	color: #000000;
+	border-style: solid;
+	border-color: #262833;
+}
+
+.news img
+{
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.news a
+{
+	text-decoration: none;
+}
