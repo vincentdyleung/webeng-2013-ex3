@@ -12,10 +12,7 @@
 	<body>
 		<header>
 			<nav>
-				<?php wp_nav_menu(array(
-					'theme_location' => 'primary',
-					'menu_class' => 'nav-menu'
-				));?>
+				<?php wp_nav_menu();?>
 			</nav>
 			<!-- <nav>
 				<ul>
