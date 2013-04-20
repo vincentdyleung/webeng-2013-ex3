@@ -1,0 +1,499 @@
+/*
+Theme Name: Uni Guide
+Theme URI: 
+Author: Web Engineering 2013 Diyu Liang, Yi-cheng Peng, Liang Zhao
+Author URI: http://webeng.vforvincent.info/ex3
+Description: Adapting ETH Guide as a Wordpress theme
+Version: 1.0
+*/
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", sans-serif;
+	background-color: #D1D3D2;
+	color: #BDBEC2;
+}
+
+body.customize-support
+{
+	margin-top: 28px;
+}
+
+li
+{
+	list-style: none;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+a, a:visited, a:hover, a:active
+{
+	color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+	#container, header
+	{
+		width: inherit;
+	}
+	
+	.column
+	{
+		float: none;
+	}
+	
+	#left
+	{
+		padding-left: 20px;
+		width: inherit;
+	}
+	
+	#left a
+	{
+		float: left;
+		border-bottom-style: none;
+		border-right-style: solid;
+		border-color: #373645;
+	}
+	
+	#right
+	{
+		padding: 0px 8px;
+		width: inherit;
+	}
+	
+	.photo-group
+	{
+		display: table-cell;
+		padding: 8px;
+	}
+	
+	#main
+	{
+		width: inherit;
+	}
+}
+
+/* responsive */
+@media screen and (min-width: 768px) {
+	#container, header
+	{
+		width: 960px;
+		margin: auto;
+	}
+
+	header nav
+	{
+		margin-left: 150px;
+		margin-right: 240px;
+	}
+	
+	.column
+	{
+		float: left;
+		margin: 0px 10px;
+	}
+	
+	#left
+	{
+		float: left;
+		margin-top: 80px;
+		width: 120px;
+	}
+	
+	#left a
+	{
+		display: inline-block;
+		width: 80%;
+		border-bottom-style: solid;
+		border-color: #373645;
+	}
+	
+	#left a:first-child
+	{
+		border-top-style: solid;
+	}
+	
+	#right
+	{
+		float: right;
+		width: 200px;
+		padding-top: 60px;
+	}
+	
+	#main
+	{
+		width: 550px;
+	}
+	
+	footer
+	{
+		margin-left: 145px;   
+	}
+}
+
+/* styles for the classes and ids*/
+#content
+{
+	display:inline-block;
+}
+
+/* nav */
+nav
+{
+	background-color: #262833;
+}
+
+nav a
+{
+	text-decoration: none;
+}
+
+nav ul
+{
+	display: inline-block;
+	padding-left: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+nav li
+{
+	float: left;
+	width: 30%;
+	margin: 0px 5px;
+	padding: 3px 0px;
+	background-color: #F1F3F2;
+	color: #5B5A62;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+nav li.current_page_item
+{
+	background-color: #BDBEC2;
+}
+
+/* left column */
+
+#left a
+{
+	margin-bottom: 2px;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #373645;
+}
+
+#left a:first-child
+{
+	text-transform: uppercase;
+	background-color: #262833;
+	color: #C2E7E8;
+}
+
+/* right column */
+#right
+{
+	color: #5A5A6A;
+}
+
+#right-title
+{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #6F606B;
+}
+
+/* photo group */
+.photo-group
+{
+	margin-bottom: 20px;
+}
+
+.photo-group h3
+{
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.photo-group div
+{
+	background-color: #FFFFFF;
+}
+
+.photo-group a
+{
+	padding: 7px;
+	display: table-cell;
+}
+.photo-group div img
+{
+	max-width: 80%;
+	margin: 7px 0px;
+	border: 10px;
+	border-style: solid;
+	border-image: url(http://webeng.vforvincent.info/ex2/images/thumb-frame.png) 25% stretch;
+}
+
+#stay-informed
+{
+	margin-top: 30px;
+}
+#stay-informed h2
+{
+	font-size: 1em;
+	text-transform: uppercase;
+	border-bottom-style: solid;
+	border-color: #000000;
+}
+
+#stay-informed img
+{
+	float:left;
+}
+
+#stay-informed a
+{
+	float: left;
+	text-decoration: none;
+}
+
+#fbk-icon
+{
+	margin-right: -5px;
+}
+
+#twt-icon
+{
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* main column */
+#main
+{
+	background-color: #262833;
+	padding: 10px;
+}
+
+#main-title
+{
+	color: #C2E7E8;
+	padding-left: 8px;
+}
+#main-title a 
+{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* footer */
+footer
+{
+	display: inline-block;
+	margin-top: 50px;
+	color: #5A5A6A;
+}
+#footer-links div
+{
+	display: inline-block;
+	border-right-style: solid;
+	text-transform: uppercase;
+}
+
+#footer-links h3
+{
+	margin: 0px 5px;
+	font-size: 16px;
+}
+
+#copyright
+{
+	margin-left: 5px;
+}
+
+.news
+{
+	padding: 8px;
+	background-color: #FFFFFF;
+}
+
+.news img
+{
+	float: left;
+	margin: 8px;
+}
+
+.news h3
+{
+	color: #262833;
+	font-size: 1em;
+}
+
+.news p
+{
+	font-size: 0.9em;
+}
+
+#headline
+{
+	margin: 8px;
+	border-bottom-style: dotted;
+	border-color: #C0C0C0;
+	color: #BDBEC2;
+}
+
+#headline-text
+{
+	display: table-cell;
+	padding: 8px;
+}
+
+#headline-text h3
+{
+	margin: 0;
+	font-size: 1em;
+}
+
+#headline-text p
+{
+	font-size: 0.9em;
+}
+
+#headline-img
+{
+	float: left;
+	margin-bottom: 5px;
+}
+
+#headline-footer
+{
+	clear: left;
+	margin-bottom: 8px;
+}
+
+#headline-footer *
+{
+	width: 45%;
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.news
+{
+	display: table-cell;
+	width: 45%;
+	color: #616161;
+}
+
+.news:first-child
+{
+	border: 2px;
+	border-right-style: solid;
+}
+
+.row-container
+{
+	padding: 8px;
+}
+
+.row
+{
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+
+#load-more
+{
+	padding-top: 10px;
+	padding-bottom: 3px;
+	text-align: center;
+	background-color: #3E3E4A;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+#load-more a
+{
+	text-decoration: none;
+}
+
+#article-body
+{
+	padding: 8px;
+}
+
+#article-body h1
+{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#article-body h4
+{
+	font-size: 0.9em;
+}
+
+#article-body span
+{
+	margin: 8px 0px 8px 3px;
+	font-weight: bold;
+}
+
+#article-body img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#download
+{
+	background-color: #3E3E4A;
+	padding: 16px 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+#download a
+{
+	text-decoration: none;
+}
+
+#news-group
+{
+	padding: 10px 0 0 0;
+	border-top-style: solid;
+}
+
+#news-group .news
+{
+	display: table-cell;
+	width: 25%;
+	color: #000000;
+	border-style: solid;
+	border-color: #262833;
+}
+
+#news-group .news img
+{
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+#news-group .news a
+{
+	text-decoration: none;
+}

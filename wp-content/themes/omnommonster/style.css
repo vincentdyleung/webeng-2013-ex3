@@ -1,0 +1,383 @@
+/*
+Theme Name: OmNomMonster
+Theme URI: http://omnomnomnom.sneakykitty.com
+Description: OM NOM NOM NOM!
+Version: 1.2
+Author: Lindsay Carruth
+Tags: fixed width, three columns, pink, widgets
+
+
+/*-----------Block Level Elements--------------*/
+
+Body {
+	background: white;
+	background-image: url(./images/weemonsters.png); 
+	font-family: Trebuchet MS, Arial, Helvetica, Georgia, sans-serif;
+	font-size: 14px;
+}
+
+#page {
+	width: 920px;
+	margin: 0 auto;
+	background: #ffc0cb;
+	padding: 0;
+	height: 100%;
+}
+
+#header {
+	width: 650px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(./images/eyes-both.gif); 
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#headerimg {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 450px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.description {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 450px;
+	text-align: center;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width: 450px;
+	border-top: 4px solid #ff0000;
+	border-right: 4px solid #ff0000;
+	border-left: 4px solid #ff0000;
+	background: #202020;
+	background-image: url(./images/teeth-upper.gif); 
+	background-repeat: repeat-x;
+	background-position: top center;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 440px;
+	background: #202020;
+	padding: 0 5px 0 5px;
+	border-bottom: 3px solid #ff0000;
+	padding-bottom: 50px;
+	background-image: url(./images/teeth-lower.gif); 
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	color: #ffffff;
+}
+
+.content a {
+	#ffc0c0;
+}
+
+#sidebar-lt {
+	float: left;
+	width: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+#sidebar-rt {
+	float: right;
+	width: 200px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 0px;
+}
+
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	width: 450px;
+	text-align: center;
+}
+
+/*-------------Headings-------------*/
+
+h1 {
+	color: white;
+}
+
+h1 a {
+	color: #000;
+}
+
+h2 {
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: white;
+}
+
+h5 {
+	color: white;
+}
+
+/*-------------The Post-------------*/
+
+
+
+h2 a:hover, h2 a:visited, h2 a {
+	color: #ffc0c0;
+	text-decoration: none;
+}
+
+.post {
+	padding: 10px;
+	text-align: justify;
+	color: white;
+}
+
+.post p {
+	color: white;
+}
+
+.post h3 {
+	color: white;
+}
+
+.post a {
+	color: #ffc0c0;
+}
+
+.post ul {
+	margin: 7px;
+	padding: 0px;
+}
+
+.post li {
+	color: white;
+}
+
+.post ol {
+	color: white;
+}
+
+.entry {
+
+}
+
+.entrytext .postmetadata {
+	font-size: small;
+}
+
+.postmetadata alt {
+	font-size: small;
+}
+
+.postmetadata a {
+	text-decoration: none;
+}
+
+.navigation {
+
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;	
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pagetitle {
+	font-size: medium;
+}
+
+blockquote {
+	background: #404040;
+	padding: 2px;
+}
+
+cite {
+
+}
+
+a img {
+	border: 0;
+}
+
+acronym, abbr {
+
+}
+
+/*--------------Sidebar------------*/
+
+.widget {
+	background: #ffffff;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+
+#sidebar-lt ul, #sidebar-rt ul {
+	margin: 1px;
+	padding-left: 7px;
+}
+
+#sidebar-lt ul h2, #sidebar-rt ul h2, .widget-title {
+	background: #efefef;
+	color: #000;
+	border-bottom: 1px solid #aaa;
+	padding-left: 7px;
+}
+
+#sidebar-lt ul li, #sidebar-rt ul li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#sidebar-lt ul ul, #sidebar-rt ul ul {
+
+}
+
+#sidebar-lt ul ul li, #sidebar-rt ul ul li {
+
+}
+
+#sidebar-lt ul ul ul, #sidebar-rt ul ul ul {
+
+}
+
+#sidebar-lt p, #sidebar-rt p, .textwidget {
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#sidebar-lt a, #sidebar-rt a {
+	color: #ff00ff;
+	text-decoration: none;
+}
+
+#sidebar-lt a:hover, #sidebar-rt a:hover {
+	color: #ff00ff;
+	text-decoration: underline;
+}
+
+#sidebar-lt a:visited, #sidebar-lt a:visited {
+	color: #ff00ff;
+	text-decoration: none;
+}
+
+
+
+/*--------------Comments--------------*/
+
+ol.commentlist, .replytext, small {
+	color: white;
+}
+
+ol.commentlist li {
+	color: white;
+}
+
+
+ol.commentlist li.alt {
+	color: white;
+	background: #404040;
+}
+
+ol.commentlist a, .replytext a {
+	color: #ffc0c0;
+
+
+}
+
+small.commentmetadata {
+	color: #ff0000;
+}
+
+.avatar {
+	float: right;
+	margin-right: 5px;
+	padding: 2px;
+}
+
+/*--------------Search Form-------------*/
+
+#searchform {
+	padding: 5px;
+}
+
+#searchform input {
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchform #s {
+
+}
+
+
+/*-------------Calendar-----------------*/
+
+#wp-calendar {
+	width: 100%;
+}
+
+#wp-calendar th {
+
+}
+
+#wp-calendar a {
+
+}
+
+#prev a, #next a {
+
+}
+
+#wp-calendar caption {
+
+}
+
+/*-------------Images------------------*/
+
+
+
+
+/*-------------Other------------------*/
+
+hr {
+	display: none;
+}
+
+img#wpstats {
+	display:none
+}
