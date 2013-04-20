@@ -17,6 +17,7 @@
 					<p>&copy Copyright 2013. All rights reserved</p>
                           </footer>
 			  </section>			
-		</section>           
+		</section>   
+<?php wp_footer(); ?>        
 	</body>
 </html>

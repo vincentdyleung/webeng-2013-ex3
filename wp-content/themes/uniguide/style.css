@@ -16,6 +16,11 @@ body
 	color: #BDBEC2;
 }
 
+body.customize-support
+{
+	margin-top: 28px;
+}
+
 li
 {
 	list-style: none;
@@ -169,7 +174,7 @@ nav li
 	font-weight: bold;
 }
 
-nav li.current
+nav li.current_page_item
 {
 	background-color: #BDBEC2;
 }
@@ -236,7 +241,7 @@ nav li.current
 	margin: 7px 0px;
 	border: 10px;
 	border-style: solid;
-	border-image: url(images/thumb-frame.png) 25% stretch;
+	border-image: url(http://webeng.vforvincent.info/ex2/images/thumb-frame.png) 25% stretch;
 }
 
 #stay-informed
@@ -472,7 +477,7 @@ footer
 	border-top-style: solid;
 }
 
-.news
+#news-group .news
 {
 	display: table-cell;
 	width: 25%;
@@ -481,14 +486,14 @@ footer
 	border-color: #262833;
 }
 
-.news img
+#news-group .news img
 {
 	float: none;
 	display: block;
 	margin: 0 auto;
 }
 
-.news a
+#news-group .news a
 {
 	text-decoration: none;
 }
