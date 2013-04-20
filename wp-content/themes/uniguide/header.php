@@ -1,4 +1,4 @@
-<html manifest="cache.appcache">
+<html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -12,11 +12,18 @@
 	<body>
 		<header>
 			<nav>
+				<?php wp_nav_menu(array(
+					'theme_location' => 'primary',
+					'menu_class' => 'nav-menu'
+				));?>
+			</nav>
+			<!-- <nav>
 				<ul>
 					<li class="current"><a href="index.html">Home</a></li>
 					<li><a href="article.html">ETH Life</a></li>
 					<li><a href="gallery.html">Photo Tour</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 		</header>
+	<section id="container">
 					

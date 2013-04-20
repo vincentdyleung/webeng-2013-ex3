@@ -32,7 +32,7 @@ a, a:visited, a:hover, a:active
 }
 
 @media screen and (max-width: 768px) {
-	#container
+	#container, header
 	{
 		width: inherit;
 	}
@@ -76,7 +76,7 @@ a, a:visited, a:hover, a:active
 
 /* responsive */
 @media screen and (min-width: 768px) {
-	#container
+	#container, header
 	{
 		width: 960px;
 		margin: auto;
@@ -90,7 +90,8 @@ a, a:visited, a:hover, a:active
 	
 	#left
 	{
-		padding-top: 80px;
+		float: left;
+		margin-top: 80px;
 		width: 120px;
 	}
 	
@@ -109,6 +110,7 @@ a, a:visited, a:hover, a:active
 	
 	#right
 	{
+		float: right;
 		width: 200px;
 		padding-top: 60px;
 	}
