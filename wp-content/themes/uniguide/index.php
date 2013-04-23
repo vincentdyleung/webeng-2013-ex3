@@ -8,8 +8,8 @@
 						<article id="headline-main">
 							<img id="headline-img" src="http://webeng.vforvincent.info/ex2/images/teaser-article.jpg" alt=""/>
 							<div id="headline-text">
-								<h3>Shedding light on the earthquake situation.</h3>
-								<p>Researchers from the Swiss Seismological Service have worked together with the Seismology and Geodynamics group at ETH Zurich and with local support in Bhutan to install a temporary seismological network. They plan to use the network to close a gap in geophysical research of the Himalayas. <a href="#">Read more...</a></p>
+								<h3><?php $options = get_option('uniguide_theme_options'); echo $options['headline_title']?></h3>
+								<p><?php echo $options['headline']?><a href="#">Read more...</a></p>
 							</div>
 						</article>
 						<div id="headline-footer">

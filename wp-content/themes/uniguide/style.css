@@ -12,13 +12,7 @@ body
 	margin: 0;
 	padding: 0;
 	font-family: "Helvetica", sans-serif;
-	background-color: #D1D3D2;
 	color: #BDBEC2;
-}
-
-body.customize-support
-{
-	margin-top: 28px;
 }
 
 li
