@@ -73,7 +73,7 @@ function theme_options_do_page() {
 
 	?>
 	<div class="wrap">
-		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Theme Options', 'uniguide' ) . "</h2>"; ?>
+		<?php screen_icon(); echo "<h2>" . wp_get_theme() . __( ' Theme Options', 'uniguide' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
 		<div class="updated fade"><p><strong><?php _e( 'Options saved', 'uniguide' ); ?></strong></p></div>
@@ -87,18 +87,6 @@ function theme_options_do_page() {
 
 				<?php
 				/**
-				 * A sample checkbox option
-				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'A checkbox', 'uniguide' ); ?></th>
-					<td>
-						<input id="uniguide_theme_options[option1]" name="uniguide_theme_options[option1]" type="checkbox" value="1" <?php checked( '1', $options['option1'] ); ?> />
-						<label class="description" for="uniguide_theme_options[option1]"><?php _e( 'Sample checkbox', 'uniguide' ); ?></label>
-					</td>
-				</tr>
-
-				<?php
-				/**
 				 * A sample text input option
 				 */
 				?>
@@ -106,63 +94,6 @@ function theme_options_do_page() {
 					<td>
 						<input id="uniguide_theme_options[headline_title]" class="regular-text" type="text" name="uniguide_theme_options[headline_title]" value="<?php esc_attr_e( $options['headline_title'] ); ?>" />
 						<label class="description" for="uniguide_theme_options[headline_title]"><?php _e( 'Title of the headline news', 'uniguide' ); ?></label>
-					</td>
-				</tr>
-
-				<?php
-				/**
-				 * A sample select input option
-				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Select input', 'uniguide' ); ?></th>
-					<td>
-						<select name="uniguide_theme_options[selectinput]">
-							<?php
-								$selected = $options['selectinput'];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_options as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-								}
-								echo $p . $r;
-							?>
-						</select>
-						<label class="description" for="uniguide_theme_options[selectinput]"><?php _e( 'Sample select input', 'uniguide' ); ?></label>
-					</td>
-				</tr>
-
-				<?php
-				/**
-				 * A sample of radio buttons
-				 */
-				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Radio buttons', 'uniguide' ); ?></th>
-					<td>
-						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Radio buttons', 'uniguide' ); ?></span></legend>
-						<?php
-							if ( ! isset( $checked ) )
-								$checked = '';
-							foreach ( $radio_options as $option ) {
-								$radio_setting = $options['radioinput'];
-
-								if ( '' != $radio_setting ) {
-									if ( $options['radioinput'] == $option['value'] ) {
-										$checked = "checked=\"checked\"";
-									} else {
-										$checked = '';
-									}
-								}
-								?>
-								<label class="description"><input type="radio" name="uniguide_theme_options[radioinput]" value="<?php esc_attr_e( $option['value'] ); ?>" <?php echo $checked; ?> /> <?php echo $option['label']; ?></label><br />
-								<?php
-							}
-						?>
-						</fieldset>
 					</td>
 				</tr>
 
@@ -191,25 +122,9 @@ function theme_options_do_page() {
  * Sanitize and validate input. Accepts an array, return a sanitized array.
  */
 function theme_options_validate( $input ) {
-	global $select_options, $radio_options;
-
-	// Our checkbox value is either 0 or 1
-	if ( ! isset( $input['option1'] ) )
-		$input['option1'] = null;
-	$input['option1'] = ( $input['option1'] == 1 ? 1 : 0 );
 
 	// Say our text option must be safe text with no HTML tags
 	$input['headline_title'] = wp_filter_nohtml_kses( $input['headline_title'] );
-
-	// Our select option must actually be in our array of select options
-	if ( ! array_key_exists( $input['selectinput'], $select_options ) )
-		$input['selectinput'] = null;
-
-	// Our radio option must actually be in our array of radio options
-	if ( ! isset( $input['radioinput'] ) )
-		$input['radioinput'] = null;
-	if ( ! array_key_exists( $input['radioinput'], $radio_options ) )
-		$input['radioinput'] = null;
 
 	// Say our textarea option must be safe text with the allowed tags for posts
 	$input['headline'] = wp_filter_post_kses( $input['headline'] );
