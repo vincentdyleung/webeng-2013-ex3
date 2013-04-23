@@ -10,6 +10,8 @@ function uniguide_setup() {
 	add_theme_support('custom-background', array(
 		'default-color' => 'd1d3d2')
 	);
+
+	add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'uniguide_setup');

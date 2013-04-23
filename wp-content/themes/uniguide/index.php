@@ -17,51 +17,26 @@
 							<span>000 views</span>
 						</div>
 					</section>
+					<?php $count = 0; ?>
 					<section class="row-container">
 						<section class="row">
+						<?php while(have_posts()) : the_post(); ?>
 							<article class="news">
-								<h3>Subordinate animals as guinea pigs.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-1.jpg" alt=""/></a>
-								<p>Subordinate animals must face higher risks than dominant ones Dominant meerkat females yield to their subaltern group members when faced with a dangerous obstacle: as a group of these animals reaches a road.</p>
+								<h3><?php the_title(); ?></h3>
+								<a href="#"><?php the_post_thumbnail(); ?></a>
+								<p><?php the_content(); ?></p>
 							</article>
-							<article class="news">
-								<h3>EU launches two flagships.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-5.jpg" alt=""/></a>
-								<p>The EU is launching two large-scale research projects for the next ten years in the form of “Graphene” and the “Human Brain Project”. “FuturICT” and “Guardian Angels”.</p>
-							</article>
+							<?php if ($count % 2 == 1) {
+								?>
 						</section>
 					</section>
 					<section class="row-container">
 						<section class="row">
-							<article class="news">
-								<h3>Research success by the dozen.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-3.jpg" alt=""/></a>
-								<p>Thanks to twelve outstanding professors, over 33 million Swiss francs from the European Research Council (ERC) will flow into ETH Zurich.</p>
-							</article>
-							<article class="news">
-								<h3>Research success by the dozen - 2.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-4.jpg" alt=""/></a>
-								<p>The EU is launching two large-scale research projects for the next ten years in the form of “Graphene” and the “Human Brain Project”.</p>
-							</article>
-						</section>
-					</section>
-					<section class="row-container">
-						<section class="row">
-							<article class="news">
-								<h3>How graphene behaves on a small scale.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-2.jpg" alt=""/></a>
-								<p>ETH Zurich is involved in the “Graphene Flagship” project through Klaus Ensslin, a professor of experimental physics. ETH Life spoke to him about the advantages of graphene and his personal vision.</p>
-							</article>
-							<article class="news">
-								<h3>Competitively displaced native species do suffer extinctions.</h3>
-								<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-6.jpg" alt=""/></a>
-								<p>ETH-Ecology-Professor Jonathan Levine showed that invasive species can indeed force the extinction of their native competitors over a long period of time.</p>
-							</article>
-						</section>
-						<div id="load-more"><a href="#">Load more...</a></div>
+							<?php } $count++; ?>
+						<?php endwhile ?>
 					</section>
 				</section>
 				<div>&nbsp;</div>
-			</div>
+			</section>
 		</section>
 <?php get_footer() ?>
