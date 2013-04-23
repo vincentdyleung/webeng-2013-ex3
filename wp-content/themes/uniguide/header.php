@@ -11,7 +11,7 @@
 	<body <?php body_class(); ?> >
 		<header>
 			<nav>
-				<?php wp_nav_menu();?>
+				<?php wp_nav_menu( array( 'theme_location' => 'pages', 'container_class' => 'pages' ) );?>
 			</nav>
 		</header>
 	<section id="container">

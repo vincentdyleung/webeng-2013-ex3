@@ -1,12 +1,9 @@
-<nav id="left" class="column">
-	<a href="#">menu</a>
-	<a href="#">About Us</a>
-	<a href="#">People</a>
-	<a href="#">Research</a>
-	<a href="#">Studies</a>
-	<a href="#">Training</a>
-	<a href="#">Campus Info</a>
-</nav>
+<?php wp_nav_menu(array(
+	'theme_location' => 'primary',
+	'container' => 'nav',
+	'container_id' => 'left',
+	'container_class' => 'column'
+)); ?>
 
 <section id="right" class="column">
 	<header>
