@@ -8,24 +8,15 @@
 		<div id="download"><a href="#">Download Press Release</a></div>
 		<section>
 			<ul id="news-group">
+				<?php $query = new WP_Query('posts_per_page=3');
+					while ($query->have_posts()) : $query->the_post()?>
 				<li class="news">
-					<h3>Subordinate animals as guinea pigs.</h3>
-					<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-1.jpg" alt=""/></a>
-					<p>Subordinate animals must face higher risks than dominant ones Dominant meerkat females yield to their subaltern group members when ...</p>
+					<h3><?php the_title(); ?></h3>
+					<a href="#"><?php the_post_thumbnail(); ?></a>
+					<p><?php the_content(); ?></p>
 					<a href="#">more ...</a>
 				</li>
-				<li class="news">
-					<h3>How graphe behave on small scale.</h3>
-					<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-2.jpg" alt=""/></a>
-					<p>ETH Zurich is involved in the “Graphene Flagship” project through Klaus Ensslin, a professor of experimental physics. ETH Life spoke ...</p>
-					<a href="#">more ...</a>
-				</li>
-				<li class="news">
-					<h3>Research success by the dozen.</h3>
-					<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/article-3.jpg" alt=""/></a>
-					<p>Thanks to twelve outstanding professors, over 33 million Swiss francs from the European Research Council (ERC) will flow into ETH ...</p>
-					<a href="#">more ...</a>
-					</li>								
+				<?php endwhile; ?>								
 			</ul>
 		</section>
 	</section>

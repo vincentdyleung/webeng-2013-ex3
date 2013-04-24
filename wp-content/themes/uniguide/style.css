@@ -12,13 +12,7 @@ body
 	margin: 0;
 	padding: 0;
 	font-family: "Helvetica", sans-serif;
-	background-color: #D1D3D2;
 	color: #BDBEC2;
-}
-
-body.customize-support
-{
-	margin-top: 28px;
 }
 
 li
@@ -36,7 +30,18 @@ a, a:visited, a:hover, a:active
 	color: inherit;
 }
 
+#left ul
+{
+	margin: 0;
+	padding: 0;
+}
+
 @media screen and (max-width: 768px) {
+	header .crop
+	{
+		display: none;
+	}
+
 	#container, header
 	{
 		width: inherit;
@@ -53,7 +58,7 @@ a, a:visited, a:hover, a:active
 		width: inherit;
 	}
 	
-	#left a
+	#left li
 	{
 		float: left;
 		border-bottom-style: none;
@@ -87,10 +92,17 @@ a, a:visited, a:hover, a:active
 		margin: auto;
 	}
 
-	header nav
+	header nav, header .crop
 	{
 		margin-left: 150px;
 		margin-right: 240px;
+	}
+
+	header .crop
+	{
+		width: 570px;
+		overflow: hidden;
+		margin-bottom: -4px;
 	}
 	
 	.column
@@ -106,7 +118,7 @@ a, a:visited, a:hover, a:active
 		width: 120px;
 	}
 	
-	#left a
+	#left li
 	{
 		display: inline-block;
 		width: 80%;
@@ -114,7 +126,7 @@ a, a:visited, a:hover, a:active
 		border-color: #373645;
 	}
 	
-	#left a:first-child
+	#left li:first-child
 	{
 		border-top-style: solid;
 	}
@@ -144,17 +156,17 @@ a, a:visited, a:hover, a:active
 }
 
 /* nav */
-nav
+nav div.pages
 {
 	background-color: #262833;
 }
 
-nav a
+nav div.pages a
 {
 	text-decoration: none;
 }
 
-nav ul
+nav div.pages ul
 {
 	display: inline-block;
 	padding-left: 10px;
@@ -162,7 +174,7 @@ nav ul
 	text-align: center;
 }
 
-nav li
+nav div.pages li
 {
 	float: left;
 	width: 30%;
@@ -174,24 +186,27 @@ nav li
 	font-weight: bold;
 }
 
-nav li.current_page_item
+nav div.pages li.current_page_item
 {
 	background-color: #BDBEC2;
 }
 
 /* left column */
 
-#left a
+#left li
 {
-	margin-bottom: 2px;
 	padding: 6px 10px;
-	text-decoration: none;
 	text-align: center;
 	background-color: #FFFFFF;
 	color: #373645;
 }
 
-#left a:first-child
+#left a
+{
+	text-decoration: none;
+}
+
+#left li:first-child
 {
 	text-transform: uppercase;
 	background-color: #262833;
@@ -241,7 +256,7 @@ nav li.current_page_item
 	margin: 7px 0px;
 	border: 10px;
 	border-style: solid;
-	border-image: url(http://webeng.vforvincent.info/ex2/images/thumb-frame.png) 25% stretch;
+	border-image: url('images/thumb-frame.png') 25% stretch;
 }
 
 #stay-informed
@@ -356,6 +371,11 @@ footer
 {
 	display: table-cell;
 	padding: 8px;
+}
+
+#headline-text a
+{
+	margin-left: 1em;
 }
 
 #headline-text h3
