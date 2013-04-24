@@ -37,6 +37,11 @@ a, a:visited, a:hover, a:active
 }
 
 @media screen and (max-width: 768px) {
+	header .crop
+	{
+		display: none;
+	}
+
 	#container, header
 	{
 		width: inherit;
@@ -87,10 +92,17 @@ a, a:visited, a:hover, a:active
 		margin: auto;
 	}
 
-	header nav
+	header nav, header .crop
 	{
 		margin-left: 150px;
 		margin-right: 240px;
+	}
+
+	header .crop
+	{
+		width: 570px;
+		overflow: hidden;
+		margin-bottom: -4px;
 	}
 	
 	.column

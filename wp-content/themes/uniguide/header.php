@@ -10,6 +10,12 @@
 	</head>
 	<body <?php body_class(); ?> >
 		<header>
+			<?php $header_image = get_header_image();
+			if ( ! empty( $header_image ) ) : ?>
+			<div class="crop">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
+			</div>
+			<?php endif; ?>
 			<nav>
 				<?php wp_nav_menu( array( 'theme_location' => 'pages', 'container_class' => 'pages' ) );?>
 			</nav>
