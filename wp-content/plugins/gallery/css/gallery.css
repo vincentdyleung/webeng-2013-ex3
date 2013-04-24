@@ -1,0 +1,61 @@
+li
+{display:inline;}
+
+@media screen and (min-width: 768px) {
+	img.center
+	{  
+		 display: block;  
+		 margin-left: auto;   
+		 margin-right: auto; 
+	}
+}
+
+#imgArea
+{
+	padding-bottom: 10px;
+}
+
+#img-list
+{
+	padding: 0;
+}
+
+#img-list img
+{
+	width: 60px;
+	height: 40px;
+}
+
+#img-list li
+{
+	display: table-cell;
+	padding: 0.5em;
+	opacity:0.4;
+	cursor: pointer;
+}
+
+#img-list li.active
+{
+	opacity:1;
+}
+
+.news
+{
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+}
+
+#slide-control
+{
+	float: right;
+	background-color: grey;
+	min-width: 60px;
+}
+
+#slide-control .ui-icon
+{
+	float: right;
+	display: inline-block;
+	margin: -0.1em;
+	cursor: pointer;
+}

@@ -5,7 +5,6 @@
 			<h1 id="main-title"><a href="#"><?php the_title()?></a></h1>
 			<?php the_content(); ?>
 		<?php endwhile; ?>
-		<div id="download"><a href="#">Download Press Release</a></div>
 		<section>
 			<ul id="news-group">
 				<?php $query = new WP_Query('posts_per_page=3');
