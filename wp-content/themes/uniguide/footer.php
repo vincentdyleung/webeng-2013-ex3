@@ -12,6 +12,9 @@
 					<div>
 						<h3>Help</h3>
 					</div>	
+					<div>
+						<h3><a href="http://webeng.vforvincent.info/ex3/wp-admin">Log In</a></h3>
+					</div>
 				</div>
 				<div id="copyright">
 					<p>&copy Copyright 2013. All rights reserved</p>

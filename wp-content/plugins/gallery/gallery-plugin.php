@@ -1,7 +1,6 @@
 <?php
 /*
-Plugin Name: Gallery plugin
-Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+Plugin Name: Webeng Gallery Plugin
 Description: Gallery adapted from excercise 2
 Version: 1.0
 Author: ETH
