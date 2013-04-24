@@ -244,7 +244,7 @@ nav div.pages li.current_page_item
 	margin: 7px 0px;
 	border: 10px;
 	border-style: solid;
-	border-image: url(http://webeng.vforvincent.info/ex2/images/thumb-frame.png) 25% stretch;
+	border-image: url('images/thumb-frame.png') 25% stretch;
 }
 
 #stay-informed
@@ -359,6 +359,11 @@ footer
 {
 	display: table-cell;
 	padding: 8px;
+}
+
+#headline-text a
+{
+	margin-left: 1em;
 }
 
 #headline-text h3

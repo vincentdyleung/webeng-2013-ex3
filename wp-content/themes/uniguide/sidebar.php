@@ -10,32 +10,33 @@
 		<h3 id="right-title">Photo Tour</h3>
 	</header>
 	<div class="photo-group">
-		<h3>ETH Zentrum</h3>
+		<h3><?php echo of_get_option('group_1_name');?></h3>
 		<div>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-1.jpg"></a>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-2.jpg"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_1_1')?>"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_1_2')?>"></a>
 		</div>
 		<div>							
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-3.jpg"></a>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-4.jpg"></a>							
+			<a href="#"><img src="<?php echo of_get_option('picture_1_3')?>"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_1_4')?>"></a>							
 		</div>
 	</div>
 	<div class="photo-group">
-		<h3>ETH Hoenggerberg</h3>
+		<h3><?php echo of_get_option('group_2_name');?></h3>
 		<div>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-5.jpg"></a>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-6.jpg"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_2_1')?>"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_2_2')?>"></a>
 		</div>
 		<div>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-7.jpg"></a>
-			<a href="#"><img src="http://webeng.vforvincent.info/ex2/images/eth-8.jpg"></a>							
+			<a href="#"><img src="<?php echo of_get_option('picture_2_3')?>"></a>
+			<a href="#"><img src="<?php echo of_get_option('picture_2_4')?>"></a>							
 		</div>
 	</div>
 	<div id="stay-informed">
+		<?php $image_path = get_template_directory_uri() . '/images/';?>
 		<h2>Stay Informed:</h2>
-		<img id="fbk-icon" src="http://webeng.vforvincent.info/ex2/images/fbk-icon.gif">
+		<img id="fbk-icon" src="<?php echo $image_path . 'fbk-icon.gif';?>">
 		<a href="http://facebook.com/">Facebook</a>
-		<img id="twt-icon" src="http://webeng.vforvincent.info/ex2/images/twt-icon.gif">
+		<img id="twt-icon" src="<?php echo $image_path . 'twt-icon.gif';?>">
 		<a href="http://twitter.com/">Twitter</a>
 	</div>
 </section>
